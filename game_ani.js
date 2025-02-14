@@ -17,7 +17,7 @@ let char1RunFrames = [];
 let char2RunFrames = [];
 let currentFrame = 0;
 let frameCount = 7;
-let frameInterval = 10;
+let frameInterval = 7;
 let frameTimer = 10;
 let char1Img = null;
 let char2Img = null;
@@ -55,7 +55,7 @@ let heartY = boardHeight - heartHeight;
 let heartImg;
 
 //physics
-let velocityX = -6;
+let velocityX = -12;
 let gravity = .4;
 let jumpStrength = -10;
 
