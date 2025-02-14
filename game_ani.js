@@ -5,10 +5,10 @@ let boardHeight = 250;
 let context;
 
 //characters
-let char1Width = 100;
-let char1Height = 100;
-let char2Width = 100;
-let char2Height = 100;
+let char1Width = 150;
+let char1Height = 120;
+let char2Width = 150;
+let char2Height = 120;
 let charX = 150;
 let charY = boardHeight - char1Height;
 
@@ -17,7 +17,7 @@ let char1RunFrames = [];
 let char2RunFrames = [];
 let currentFrame = 0;
 let frameCount = 7;
-let frameInterval = 7;
+let frameInterval = 4;
 let frameTimer = 10;
 let char1Img = null;
 let char2Img = null;
@@ -56,8 +56,8 @@ let heartImg;
 
 //physics
 let velocityX = -12;
-let gravity = .4;
-let jumpStrength = -10;
+let gravity = .7;
+let jumpStrength = -12;
 
 let gameOver = false;
 let score = 0;
@@ -78,7 +78,7 @@ function loadImages() {
             imagesLoaded++;
             checkAllImagesLoaded();
         };
-        img.src = `./img/wom${i}.png`;
+        img.src = `./img/tig${i}.png`;
         char1RunFrames.push(img);
     }
 
@@ -89,7 +89,7 @@ function loadImages() {
             imagesLoaded++;
             checkAllImagesLoaded();
         };
-        img.src = `./img/tig${i}.png`;
+        img.src = `./img/wom${i}.png`;
         char2RunFrames.push(img);
     }
 
